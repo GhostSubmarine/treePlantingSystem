@@ -2,7 +2,7 @@
 	<view class="page">
 		<image class="avator-img" src="../../static/mine/wImage@1x.png" alt="" :draggable="false" />
 		<text class="avator-name">{{avatorName}}</text>
-		<view class="row">
+		<view class="row" @click="goOrderManager">
 			<image class="row-img" 
 				src="../../static/mine/fas fa-align-left@1x.png" 
 				draggable="false" />
@@ -49,7 +49,9 @@
 			}
 		},
 		methods: {
-			
+			goOrderManager() {
+				uni.navigateTo({ url: `/pages/mine/orderManager` })
+			}
 		}
 	}
 </script>

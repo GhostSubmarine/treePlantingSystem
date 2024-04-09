@@ -41,7 +41,24 @@
 			{
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : true,
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "订单管理"
+			}
+		},
+		{
+			"path" : "pages/adopt/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "xx公园"
+			}
+		},
+		{
+			"path" : "pages/adopt/treeDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
 			}
 		}
 	],
