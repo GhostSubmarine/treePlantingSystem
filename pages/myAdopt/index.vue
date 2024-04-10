@@ -8,7 +8,7 @@
 				disabledColor="#ffffff"
 				placeholder="种类"
 				suffixIcon="arrow-right"
-				@click="show=true"
+				@click="openPicker"
 			></u--input>
 			<u--input
 				v-model="userInfo.sex"
@@ -17,7 +17,7 @@
 				disabledColor="#ffffff"
 				placeholder="类别"
 				suffixIcon="arrow-right"
-				@click="show=true"
+				@click="openPicker"
 			></u--input>
 			<u--input
 				v-model="userInfo.sex"
@@ -26,7 +26,7 @@
 				placeholder="认养状态"
 				disabled
 				suffixIcon="arrow-right"
-				@click="show=true"
+				@click="openPicker"
 			></u--input>
 		</view>
 		<List v-for="item in adoptData" :data="item" :key="item.id" />
@@ -62,6 +62,9 @@
 		methods: {
 			confirm(e) {
 				console.log(e);
+			},
+			openPicker() {
+				debugger
 			}
 		}
 	}

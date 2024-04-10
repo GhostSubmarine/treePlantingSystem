@@ -15,8 +15,8 @@
 			<u-list-item>
 				<u-cell
 					icon="../../static/mine/fas fa-address-card Jut3Y4v@1x.png"
-					@click="goOrderManager"
 					title="我的证书/树木照片"
+					@click="goCardShow"
 					:isLink="true"
 				>
 				</u-cell>
@@ -24,7 +24,7 @@
 			<u-list-item>
 				<u-cell
 					icon="../../static/mine/md-help 4SG89L2@1x.png"
-					@click="goOrderManager"
+					@click="goContactUs"
 					title="联系客服"
 					:isLink="true"
 				>
@@ -33,7 +33,6 @@
 			<u-list-item>
 				<u-cell
 					icon="../../static/mine/md-assignment_late@1x.png"
-					@click="goOrderManager"
 					title="用户指南"
 					:isLink="true"
 				>
@@ -42,16 +41,17 @@
 			<u-list-item>
 				<u-cell
 					icon="../../static/mine/md-assignment_returned@1x.png"
-					@click="goOrderManager"
-					title="碳减排"
 					:isLink="true"
 				>
+					<view slot="title" style="display: flex; align-items: center;">
+						<text>碳减排</text>
+						<text style="color: green;">[{{123123}}]</text>
+					</view>
 				</u-cell>
 			</u-list-item>
 			<u-list-item>
 				<u-cell
 					icon="../../static/mine/fas fa-align-left@1x.png"
-					@click="goOrderManager"
 					title="绑定/修改手机号"
 					:isLink="true"
 				>
@@ -71,6 +71,12 @@
 		methods: {
 			goOrderManager() {
 				uni.navigateTo({ url: `/pages/mine/orderManager` })
+			},
+			goContactUs() {
+				uni.navigateTo({ url: `/pages/mine/contactUs` })
+			},
+			goCardShow() {
+				uni.navigateTo({ url: `/pages/mine/cardShow` })
 			}
 		}
 	}

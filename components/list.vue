@@ -37,6 +37,7 @@
 		},
 		methods: {
 			goTreeDetail() {
+				if (!this.treeObj.edit) return
 				uni.navigateTo({ url: `/pages/adopt/treeDetail` })
 			},
 			statusFilter(status) {

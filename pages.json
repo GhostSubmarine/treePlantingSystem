@@ -58,7 +58,8 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "树木详情"
 			}
 		},
 		{
@@ -66,7 +67,8 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "树木详情"
 			}
 		},
 		{
@@ -74,7 +76,8 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "认养下单"
 			}
 		},
 		{
@@ -82,7 +85,26 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "订单确认"
+			}
+		},
+		{
+			"path" : "pages/mine/contactUs",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "联系我们"
+			}
+		},
+		{
+			"path" : "pages/mine/cardShow",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationBarTitleText": "证书展示"
 			}
 		}
 	],

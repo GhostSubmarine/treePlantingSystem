@@ -10,37 +10,37 @@
 			</u-list-item>
 			<u-list-item>
 				<u-cell
-					:title="`种类${treeDetail.type}`"
+					:title="`种类：${treeDetail.type}`"
 				>
 				</u-cell>
 			</u-list-item>
 			<u-list-item>
 				<u-cell
-					:title="`规格${treeDetail.size}`"
+					:title="`规格：${treeDetail.size}`"
 				>
 				</u-cell>
 			</u-list-item>
 			<u-list-item>
 				<u-cell
-					:title="`认捐${treeDetail.user}`"
+					:title="`认捐：${treeDetail.user}`"
 				>
 				</u-cell>
 			</u-list-item>
 			<u-list-item>
 				<u-cell
-					:title="`所属${treeDetail.owner}`"
+					:title="`所属：${treeDetail.owner}`"
 				>
 				</u-cell>
 			</u-list-item>
 			<u-list-item>
 				<u-cell
-					:title="`具体位置${treeDetail.location}`"
+					:title="`具体位置：${treeDetail.location}`"
 				>
 				</u-cell>
 			</u-list-item>
 			<u-list-item>
 				<u-cell
-					:title="`介绍${treeDetail.desc}`"
+					:title="`介绍：${treeDetail.desc}`"
 				>
 				</u-cell>
 			</u-list-item>

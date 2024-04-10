@@ -13,12 +13,12 @@
 		data() {
 			return {
 				adoptData: [
-					{status: 1, id: '1', no: 'xxxxxx', type: 'xxx', user: 'xxxx'},
-					{status: 1, id: '2', no: 'xxxxxx', type: 'xxx', user: 'xxxx'},
-					{status: 1, id: '3', no: 'xxxxxx', type: 'xxx', user: 'xxxx'},
-					{status: 1, id: '4', no: 'xxxxxx', type: 'xxx', user: 'xxxx'},
-					{status: 1, id: '5', no: 'xxxxxx', type: 'xxx', user: 'xxxx'},
-					{status: 1, id: '6', no: 'xxxxxx', type: 'xxx', user: 'xxxx'}
+					{status: 1, id: '1', no: 'xxxxxx', type: 'xxx', user: 'xxxx', edit: true},
+					{status: 1, id: '2', no: 'xxxxxx', type: 'xxx', user: 'xxxx', edit: true},
+					{status: 1, id: '3', no: 'xxxxxx', type: 'xxx', user: 'xxxx', edit: true},
+					{status: 1, id: '4', no: 'xxxxxx', type: 'xxx', user: 'xxxx', edit: true},
+					{status: 1, id: '5', no: 'xxxxxx', type: 'xxx', user: 'xxxx', edit: true},
+					{status: 1, id: '6', no: 'xxxxxx', type: 'xxx', user: 'xxxx', edit: true}
 				]
 			};
 		}

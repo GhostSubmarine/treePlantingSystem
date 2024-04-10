@@ -31,25 +31,17 @@
 					border="none"
 				></u--input>
 			</u-form-item>
-			<!-- <u-form-item
-				label="手机号"
-				prop="userInfo.phone"
+			<u-form-item
+				label="认养寄语"
+				prop="userInfo.note"
 				borderBottom
-				@click="showSex = true; hideKeyboard()"
 				ref="item1"
 			>
 				<u--input
-					v-model="model1.userInfo.sex"
-					disabled
-					disabledColor="#ffffff"
-					placeholder="请选择性别"
+					v-model="model1.userInfo.note"
 					border="none"
 				></u--input>
-				<u-icon
-					slot="right"
-					name="arrow-right"
-				></u-icon>
-			</u-form-item> -->
+			</u-form-item>
 		</u--form>
 		<u-button @click="goConfirm2" type="primary" style="width: 50%; margin: 20rpx auto;" shape="circle" text="我要认养"></u-button>
 	</view>
@@ -63,6 +55,7 @@
 					userInfo: {
 						username: 'xxx',
 						phone: '18211111111',
+						note: '播散一份春意，成就一份未来。'
 					},
 				},
 				rules: {
