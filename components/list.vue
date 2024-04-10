@@ -1,12 +1,14 @@
 <template>
 	<view class="container" @click="goTreeDetail">
 		<view class="top">
-			<text class="tree-name">xx树木</text>
-			<text class="status-btn" :class="{
+			<!-- <text class="tree-name"></text> -->
+			<u--text :text="'xx树木'"></u--text>
+			<!-- <text class="status-btn" :class="{
 				wait: treeObj.status === 1,
 				expire: treeObj.status === 2,
 				on: treeObj.status === 3
-			}">{{treeObj.status | statusFilter}}</text>
+			}">{{treeObj.status | statusFilter}}</text> -->
+			<u-tag :text="statusFilter(treeObj.status)" :type="typeFilter(treeObj.status)" shape="circle" />
 		</view>
 		<view class="bottom">
 			<image class="tree-img" src="../static/adopt/图片 2 LorJGxr@1x.png" />
@@ -36,9 +38,7 @@
 		methods: {
 			goTreeDetail() {
 				uni.navigateTo({ url: `/pages/adopt/treeDetail` })
-			}
-		},
-		filters: {
+			},
 			statusFilter(status) {
 				switch(status) {
 					case 1:
@@ -47,6 +47,20 @@
 						return '已过期'
 					case 3:
 						return '认养中'
+					default:
+						return ''
+				}
+			},
+			typeFilter(status) {
+				switch(status) {
+					case 1:
+						return 'info'
+					case 2:
+						return 'error'
+					case 3:
+						return 'success'
+					default:
+						return ''
 				}
 			}
 		}

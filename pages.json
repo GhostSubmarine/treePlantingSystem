@@ -14,7 +14,7 @@
 			{
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : true,
-				"navigationBarTitleText": "领养"
+				"navigationBarTitleText": "认养"
 			}
 		},
 		{
@@ -23,7 +23,7 @@
 			{
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : true,
-				"navigationBarTitleText": "我的领养"
+				"navigationBarTitleText": "我的认养"
 			}
 		},
 		{
@@ -60,6 +60,30 @@
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages/adopt/adoptConfirm",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/adopt/adoptConfirm2",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/adopt/adoptConfirm3",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"globalStyle": {
@@ -84,13 +108,13 @@
 			},
 			{
 				"pagePath": "pages/adopt/index",
-				"text": "领养",
+				"text": "认养",
 				"iconPath": "static/tabbar/watch_default.png",
 				"selectedIconPath": "static/tabbar/watch_selected.png"
 			},
 			{
 				"pagePath": "pages/myAdopt/index",
-				"text": "我的领养",
+				"text": "我的认养",
 				"iconPath": "static/tabbar/recommend_default.png",
 				"selectedIconPath": "static/tabbar/recommend_selected.png"
 			},
@@ -101,5 +125,8 @@
 				"selectedIconPath": "static/tabbar/user_selected.png"
 			}
 		]
+	},
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	}
 }

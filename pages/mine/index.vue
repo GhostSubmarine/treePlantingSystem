@@ -2,42 +2,62 @@
 	<view class="page">
 		<image class="avator-img" src="../../static/mine/wImage@1x.png" alt="" :draggable="false" />
 		<text class="avator-name">{{avatorName}}</text>
-		<view class="row" @click="goOrderManager">
-			<image class="row-img" 
-				src="../../static/mine/fas fa-align-left@1x.png" 
-				draggable="false" />
-			<text>订单管理</text>
-		</view>
-		<view class="row">
-			<image class="row-img" 
-				src="../../static/mine/fas fa-address-card Jut3Y4v@1x.png" 
-				draggable="false" />
-			<text>我的证书/树木照片</text>
-		</view>
-		<view class="row">
-			<image class="row-img" 
-				src="../../static/mine/md-help 4SG89L2@1x.png" 
-				draggable="false" />
-			<text>联系客服</text>
-		</view>
-		<view class="row">
-			<image class="row-img" 
-				src="../../static/mine/md-assignment_late@1x.png" 
-				draggable="false" />
-			<text>用户指南</text>
-		</view>
-		<view class="row">
-			<image class="row-img" 
-				src="../../static/mine/md-assignment_returned@1x.png" 
-				draggable="false" />
-			<text>碳减排</text>
-		</view>
-		<view class="row">
-			<image class="row-img" 
-				src="../../static/mine/md-settings A0zvrXV Copy 2@1x.png" 
-				draggable="false" />
-			<text>绑定/修改手机号</text>
-		</view>
+		<u-list>
+			<u-list-item>
+				<u-cell
+					icon="../../static/mine/fas fa-align-left@1x.png"
+					@click="goOrderManager"
+					title="订单管理"
+					:isLink="true"
+				>
+				</u-cell>
+			</u-list-item>
+			<u-list-item>
+				<u-cell
+					icon="../../static/mine/fas fa-address-card Jut3Y4v@1x.png"
+					@click="goOrderManager"
+					title="我的证书/树木照片"
+					:isLink="true"
+				>
+				</u-cell>
+			</u-list-item>
+			<u-list-item>
+				<u-cell
+					icon="../../static/mine/md-help 4SG89L2@1x.png"
+					@click="goOrderManager"
+					title="联系客服"
+					:isLink="true"
+				>
+				</u-cell>
+			</u-list-item>
+			<u-list-item>
+				<u-cell
+					icon="../../static/mine/md-assignment_late@1x.png"
+					@click="goOrderManager"
+					title="用户指南"
+					:isLink="true"
+				>
+				</u-cell>
+			</u-list-item>
+			<u-list-item>
+				<u-cell
+					icon="../../static/mine/md-assignment_returned@1x.png"
+					@click="goOrderManager"
+					title="碳减排"
+					:isLink="true"
+				>
+				</u-cell>
+			</u-list-item>
+			<u-list-item>
+				<u-cell
+					icon="../../static/mine/fas fa-align-left@1x.png"
+					@click="goOrderManager"
+					title="绑定/修改手机号"
+					:isLink="true"
+				>
+				</u-cell>
+			</u-list-item>
+		</u-list>
 	</view>
 </template>
 
